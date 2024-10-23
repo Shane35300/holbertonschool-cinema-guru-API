@@ -1,0 +1,10 @@
+.input-container .label-container {
+	border: 1px solid black;
+	display: flex;
+	column-gap: 10px;
+}
+
+.input-container .label-container .input-icon {
+	color: 000000;
+	opacity: 40%;
+}
