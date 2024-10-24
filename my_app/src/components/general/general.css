@@ -1,5 +1,4 @@
 .input-container .label-container {
-	border: 1px solid black;
 	display: flex;
 	column-gap: 10px;
 }
@@ -7,4 +6,79 @@
 .input-container .label-container .input-icon {
 	color: 000000;
 	opacity: 40%;
+}
+
+.input-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.input-container input {
+	border-bottom: 1px rgba(187, 0, 14, 1) solid;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	outline: none;
+}
+
+.select-input-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	color: lightgray;
+	background-color: black;
+}
+
+.select-input-container>select {
+	border-bottom: 1px rgba(187, 0, 14, 1) solid;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	outline: none;
+	color: lightgray;
+	background-color: rgb(44, 44, 44);
+}
+
+button {
+	background-color: rgba(187, 0, 14, 1);
+	color: whitesmoke;
+	padding: 8px;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+button:hover {
+	background-color: rgb(212, 3, 17);
+	/* Couleur plus claire au survol */
+}
+.search-bar-container {
+	border: green 1px solid;
+	display: flex;
+	border-radius: 10px;
+	padding-left: 6px;
+	background-color: rgba(44, 44, 44, 1);
+	color: gray;
+	opacity: 60%;
+	transition: color 0.3s ease;
+}
+.search-bar-container:hover {
+	color: whitesmoke;
+	cursor: pointer;
+}
+.search-bar-container input {
+	background-color: rgba(44, 44, 44, 1);
+	outline: none;
+	border: none;
+	transition: color 0.3s ease;
+	color: gray;
+}
+.search-bar-container input:hover {
+	cursor: pointer;
+	caret-color: whitesmoke;
+	color: white;
+}
+.search-bar-container input:hover::placeholder {
+	color: white; /* Placeholder blanc translucide */
+	opacity: 1;
 }
